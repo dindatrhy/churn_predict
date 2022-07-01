@@ -2,7 +2,7 @@ plotly
 pandas
 numpy==1.23.0
 statistics
-imbalanced-learn
+imbalanced-learn==0.9.1
 collections
 pillow
 nltk
