@@ -2,9 +2,12 @@ plotly
 pandas
 numpy==1.23.0
 statistics
+imblearn
+collections
 pillow
 nltk
-re
+statsmodels
+xgboost
 requests
 streamlit
 sklearn
