@@ -1,0 +1,10 @@
+plotly
+pandas
+numpy
+math
+pillow
+nltk
+re
+requests
+streamlit
+sklearn
