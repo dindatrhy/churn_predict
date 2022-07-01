@@ -4,7 +4,6 @@ numpy==1.23.0
 statistics
 imbalanced-learn==0.9.1
 pillow
-nltk
 statsmodels
 xgboost
 requests
