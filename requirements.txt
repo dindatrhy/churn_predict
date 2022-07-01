@@ -3,7 +3,6 @@ pandas
 numpy==1.23.0
 statistics
 imbalanced-learn==0.9.1
-collections==3.10.5
 pillow
 nltk
 statsmodels
