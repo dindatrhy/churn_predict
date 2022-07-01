@@ -1,7 +1,7 @@
 plotly
 pandas
 numpy==1.23.0
-math
+math==3.10.5
 pillow
 nltk
 re
