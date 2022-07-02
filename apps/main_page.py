@@ -20,7 +20,7 @@ from sklearn.model_selection import StratifiedKFold
 from imblearn.over_sampling import SMOTE
 from sklearn.metrics import classification_report, accuracy_score
 import joblib
-
+from sklearn.ensemble import RandomForestClassifier
 
 import warnings
 warnings.filterwarnings("ignore")
@@ -45,11 +45,10 @@ def app():
     #rename dataframe
     data.columns = data.columns.str.lower()
 
-    data = data[['total_trans_ct', 'total_revolving_bal',
-       'total_relationship_count', 'total_trans_amt',
-       'months_inactive_12_mon', 'total_ct_chng_q4_q1',
-       'total_amt_chng_q4_q1', 'avg_open_to_buy', 'customer_age',
-       'contacts_count_12_mon']]
+    data = data[['total_relationship_count', 'total_trans_ct',
+       'total_ct_chng_q4_q1', 'gender', 'credit_limit',
+       'months_inactive_12_mon', 'contacts_count_12_mon',
+       'avg_open_to_buy', 'total_amt_chng_q4_q1', 'customer_age']]
     
         
 
@@ -58,7 +57,7 @@ def app():
     Input Model
     '''
 
-    model = joblib.load('./apps/model_churn_1.pkl')
+    model = joblib.load('./apps/model_churn_2.pkl')
 
     prediction_test = model.predict(data)
 
